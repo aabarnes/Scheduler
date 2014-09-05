@@ -358,7 +358,7 @@
   <customwidget>
    <class>TimeSlot</class>
    <extends>QWidget</extends>
-   <header>C:\Users\Alyssa\Dropbox\Qt Projects\Scheduler\TimeSlot.h</header>
+   <header>C:\Users\Alyssa\Documents\GitHub\Scheduler\TimeSlot.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

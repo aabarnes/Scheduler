@@ -192,7 +192,7 @@
   <customwidget>
    <class>CalendarWeekWidget</class>
    <extends>QWidget</extends>
-   <header>C:\Users\Alyssa\Dropbox\Qt Projects\Scheduler\CalendarWeekWidget.h</header>
+   <header>C:\Users\Alyssa\Documents\GitHub\Scheduler\CalendarWeekWidget.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

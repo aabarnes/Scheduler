@@ -357,7 +357,7 @@
   <customwidget>
    <class>ColorButton</class>
    <extends>QPushButton</extends>
-   <header>C:\Users\Alyssa\Dropbox\Qt Projects\Scheduler\ColorButton.h</header>
+   <header>C:\Users\Alyssa\Documents\GitHub\Scheduler\ColorButton.h</header>
   </customwidget>
  </customwidgets>
  <resources/>
