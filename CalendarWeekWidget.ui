@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CalendarWeekWidget</class>
+ <widget class="QWidget" name="CalendarWeekWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>775</width>
+    <height>782</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="frameGrid">
+     <property name="frameShape">
+      <enum>QFrame::WinPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <property name="leftMargin">
+       <number>3</number>
+      </property>
+      <property name="topMargin">
+       <number>3</number>
+      </property>
+      <property name="rightMargin">
+       <number>3</number>
+      </property>
+      <property name="bottomMargin">
+       <number>3</number>
+      </property>
+      <property name="spacing">
+       <number>3</number>
+      </property>
+      <item row="20" column="1" colspan="7">
+       <widget class="TimeSlot" name="week7P" native="true"/>
+      </item>
+      <item row="4" column="1" colspan="7">
+       <widget class="TimeSlot" name="week3A" native="true"/>
+      </item>
+      <item row="12" column="1" colspan="7">
+       <widget class="TimeSlot" name="week11A" native="true"/>
+      </item>
+      <item row="10" column="1" colspan="7">
+       <widget class="TimeSlot" name="week9A" native="true"/>
+      </item>
+      <item row="13" column="1" colspan="7">
+       <widget class="TimeSlot" name="week12P" native="true"/>
+      </item>
+      <item row="2" column="1" colspan="7">
+       <widget class="TimeSlot" name="week1A" native="true"/>
+      </item>
+      <item row="6" column="1" colspan="7">
+       <widget class="TimeSlot" name="week5A" native="true"/>
+      </item>
+      <item row="15" column="1" colspan="7">
+       <widget class="TimeSlot" name="week2P" native="true"/>
+      </item>
+      <item row="5" column="1" colspan="7">
+       <widget class="TimeSlot" name="week4A" native="true"/>
+      </item>
+      <item row="1" column="1" colspan="7">
+       <widget class="TimeSlot" name="week12A" native="true"/>
+      </item>
+      <item row="8" column="1" colspan="7">
+       <widget class="TimeSlot" name="week7A" native="true"/>
+      </item>
+      <item row="14" column="1" colspan="7">
+       <widget class="TimeSlot" name="week1P" native="true"/>
+      </item>
+      <item row="3" column="1" colspan="7">
+       <widget class="TimeSlot" name="week2A" native="true"/>
+      </item>
+      <item row="17" column="1" colspan="7">
+       <widget class="TimeSlot" name="week4P" native="true"/>
+      </item>
+      <item row="11" column="1" colspan="7">
+       <widget class="TimeSlot" name="week10A" native="true"/>
+      </item>
+      <item row="18" column="1" colspan="7">
+       <widget class="TimeSlot" name="week5P" native="true"/>
+      </item>
+      <item row="9" column="1" colspan="7">
+       <widget class="TimeSlot" name="week8A" native="true"/>
+      </item>
+      <item row="16" column="1" colspan="7">
+       <widget class="TimeSlot" name="week3P" native="true"/>
+      </item>
+      <item row="7" column="1" colspan="7">
+       <widget class="TimeSlot" name="week6A" native="true"/>
+      </item>
+      <item row="19" column="1" colspan="7">
+       <widget class="TimeSlot" name="week6P" native="true"/>
+      </item>
+      <item row="21" column="1" colspan="7">
+       <widget class="TimeSlot" name="week8P" native="true"/>
+      </item>
+      <item row="23" column="1" colspan="7">
+       <widget class="TimeSlot" name="week10P" native="true"/>
+      </item>
+      <item row="22" column="1" colspan="7">
+       <widget class="TimeSlot" name="week9P" native="true"/>
+      </item>
+      <item row="24" column="1" colspan="7">
+       <widget class="TimeSlot" name="week11P" native="true"/>
+      </item>
+      <item row="22" column="0">
+       <widget class="QPushButton" name="button9P">
+        <property name="text">
+         <string>9:00 PM</string>
+        </property>
+       </widget>
+      </item>
+      <item row="23" column="0">
+       <widget class="QPushButton" name="button10P">
+        <property name="text">
+         <string>10:00 PM</string>
+        </property>
+       </widget>
+      </item>
+      <item row="21" column="0">
+       <widget class="QPushButton" name="button8P">
+        <property name="text">
+         <string>8:00 PM</string>
+        </property>
+       </widget>
+      </item>
+      <item row="20" column="0">
+       <widget class="QPushButton" name="button7P">
+        <property name="text">
+         <string>7:00 PM</string>
+        </property>
+       </widget>
+      </item>
+      <item row="17" column="0">
+       <widget class="QPushButton" name="button4P">
+        <property name="text">
+         <string>4:00 PM</string>
+        </property>
+       </widget>
+      </item>
+      <item row="19" column="0">
+       <widget class="QPushButton" name="button6P">
+        <property name="text">
+         <string>6:00 PM</string>
+        </property>
+       </widget>
+      </item>
+      <item row="14" column="0">
+       <widget class="QPushButton" name="button1P">
+        <property name="text">
+         <string>1:00 PM</string>
+        </property>
+       </widget>
+      </item>
+      <item row="18" column="0">
+       <widget class="QPushButton" name="button5P">
+        <property name="text">
+         <string>5:00 PM</string>
+        </property>
+       </widget>
+      </item>
+      <item row="15" column="0">
+       <widget class="QPushButton" name="button2P">
+        <property name="text">
+         <string>2:00 PM</string>
+        </property>
+       </widget>
+      </item>
+      <item row="16" column="0">
+       <widget class="QPushButton" name="button3P">
+        <property name="text">
+         <string>3:00 PM</string>
+        </property>
+       </widget>
+      </item>
+      <item row="24" column="0">
+       <widget class="QPushButton" name="button11P">
+        <property name="text">
+         <string>11:00 PM</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QPushButton" name="buttonWed">
+        <property name="text">
+         <string>Wednesday</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QPushButton" name="button3A">
+        <property name="text">
+         <string>3:00 AM</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QPushButton" name="button6A">
+        <property name="text">
+         <string>6:00 AM</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="buttonMon">
+        <property name="text">
+         <string>Monday</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QPushButton" name="button2A">
+        <property name="text">
+         <string>2:00 AM</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="button1A">
+        <property name="text">
+         <string>1:00 AM</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QPushButton" name="button7A">
+        <property name="text">
+         <string>7:00 AM</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="buttonSun">
+        <property name="text">
+         <string>Sunday</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QPushButton" name="buttonThurs">
+        <property name="text">
+         <string>Thursday</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="6">
+       <widget class="QPushButton" name="buttonFri">
+        <property name="text">
+         <string>Friday</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="7">
+       <widget class="QPushButton" name="buttonSat">
+        <property name="text">
+         <string>Saturday</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="buttonTues">
+        <property name="text">
+         <string>Tuesday</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="button12A">
+        <property name="text">
+         <string>12:00 AM</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QPushButton" name="button4A">
+        <property name="text">
+         <string>4:00 AM</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QPushButton" name="button5A">
+        <property name="text">
+         <string>5:00 AM</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QPushButton" name="button8A">
+        <property name="text">
+         <string>8:00 AM</string>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="0">
+       <widget class="QPushButton" name="button11A">
+        <property name="text">
+         <string>11:00 AM</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="0">
+       <widget class="QPushButton" name="button9A">
+        <property name="text">
+         <string>9:00 AM</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="0">
+       <widget class="QPushButton" name="button10A">
+        <property name="text">
+         <string>10:00 AM</string>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="0">
+       <widget class="QPushButton" name="button12P">
+        <property name="text">
+         <string>12:00 PM</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>v | &gt;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TimeSlot</class>
+   <extends>QWidget</extends>
+   <header>C:\Users\Alyssa\Dropbox\Qt Projects\Scheduler\TimeSlot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
