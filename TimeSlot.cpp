@@ -6,9 +6,11 @@
 
 TimeSlot::TimeSlot(QWidget *parent) :
     QWidget(parent),
-    ui(new Ui::TimeSlot)
+    ui(new Ui::TimeSlot),
+    state(new int[7])
 {
     ui->setupUi(this);
+
     setChildren();
 }
 
@@ -17,67 +19,41 @@ TimeSlot::~TimeSlot()
     delete ui;
 }
 
-void TimeSlot::changeButtonColor(ColorButton *button, const QColor &color){
-    QPalette pal;
-    pal = button->palette();
-    pal.setColor(QPalette::Button, color);
-    button->setAutoFillBackground(true);
-    button->setPalette(pal);
-    button->update();
+int *TimeSlot::getTimeAvail(){
+    int i = -1;
+    foreach(ColorButton *child, children){
+        state[++i] = child->getColorState();
+    }
+    return state;
 }
 
 void TimeSlot::allDay(int day, int avail){
-
-    QColor color;
-
-    // Deterimine color
-    if(avail == 0) {
-        color = QColor(Qt::red);
-    } else if(avail == 1) {
-        color = QColor(Qt::yellow);
-    } else if(avail == 2){
-        color = QColor(Qt::green);
-    } else {
-        //invalid availability
-    }
+    ColorButton *button;
 
     // Determine day
     if(day == 0) {
-        changeButtonColor(ui->buttonSun, color);
+        button = children.at(0);
     } else if(day == 1) {
-        changeButtonColor(ui->buttonMon, color);
+        button = children.at(1);
     } else if(day == 2) {
-        changeButtonColor(ui->buttonTues, color);
+        button = children.at(2);
     } else if(day == 3) {
-        changeButtonColor(ui->buttonWed, color);
+        button = children.at(3);
     } else if(day == 4) {
-        changeButtonColor(ui->buttonThur, color);
+        button = children.at(4);
     } else if(day == 5) {
-        changeButtonColor(ui->buttonFri, color);
+        button = children.at(5);
     } else if(day == 6) {
-        changeButtonColor(ui->buttonSat, color);
+        button = children.at(6);
     } else {
         // invalid day
     }
+    button->changeColor(avail);
 }
 
 void TimeSlot::allTime(int avail){
-     QColor color;
-
-    // Deterimine color
-    if(avail == 0) {
-        color = QColor(Qt::red);
-    } else if(avail == 1) {
-        color = QColor(Qt::yellow);
-    } else if(avail == 2){
-        color = QColor(Qt::green);
-    } else {
-        //invalid availability
-    }
-
-    //Apply changes
-    foreach(ColorButton *child,children){
-        changeButtonColor(child, color);
+    foreach(ColorButton *child, children){
+        child->changeColor(avail);
     }
 }
 

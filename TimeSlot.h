@@ -15,6 +15,8 @@ public:
     explicit TimeSlot(QWidget *parent = 0);
     ~TimeSlot();
 
+    int *getTimeAvail();
+
 public slots:
     void allTime(int avail);
     void allDay(int day, int avail);
@@ -22,8 +24,8 @@ public slots:
 private:
     Ui::TimeSlot *ui;
     QList<ColorButton*> children;
+    int *state;
 
-    void changeButtonColor(ColorButton *button, const QColor &color);
     void setChildren();
 
     //Unimplemented
