@@ -17,6 +17,7 @@ CalendarWeekWidget::CalendarWeekWidget(QWidget *parent) :
 
     connect(dayGroup, SIGNAL(buttonClicked(int)), this, SLOT(handleDayClicked(int)));
     connect(timeGroup, SIGNAL(buttonClicked(int)), this, SLOT(handleTimeClicked(int)));
+    connect(ui->buttonAll, SIGNAL(clicked()), this, SLOT(handleAllClicked()));
 }
 
 CalendarWeekWidget::~CalendarWeekWidget()
@@ -102,11 +103,17 @@ void CalendarWeekWidget::setTimeGroup(){
 }
 
 void CalendarWeekWidget::handleDayClicked(int day){
-    for(int i = 0; i < 24; ++i){
+    for(int i = 0; i < timeSlots.size(); ++i){
         timeSlots.at(i)->allDay(day, avail);
     }
 }
 
 void CalendarWeekWidget::handleTimeClicked(int id){
     timeSlots.at(id)->allTime(avail);
+}
+
+void CalendarWeekWidget::handleAllClicked(){
+    for(int i = 0; i < timeSlots.size(); ++i){
+        timeSlots.at(i)->allTime(avail);
+    }
 }

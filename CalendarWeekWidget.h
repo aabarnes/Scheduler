@@ -37,6 +37,7 @@ private:
 private slots:
     void handleDayClicked(int day);
     void handleTimeClicked(int id);
+    void handleAllClicked();
 };
 
 #endif // CALENDARWEEKWIDGET_H

@@ -93,6 +93,13 @@
         </layout>
        </item>
        <item>
+        <widget class="QPushButton" name="buttonSubmit">
+         <property name="text">
+          <string>Submit</string>
+         </property>
+        </widget>
+       </item>
+       <item>
         <spacer name="verticalSpacer">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
@@ -161,7 +168,7 @@
      <x>0</x>
      <y>0</y>
      <width>879</width>
-     <height>26</height>
+     <height>21</height>
     </rect>
    </property>
    <property name="acceptDrops">

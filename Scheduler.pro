@@ -18,7 +18,8 @@ SOURCES += main.cpp\
     Schedulerdialog.cpp \
     TimeSlot.cpp \
     ColorButton.cpp \
-    UserProfile.cpp
+    UserProfile.cpp \
+    MeetingGroup.cpp
 
 HEADERS  += \
     CalendarWeekWidget.h \
@@ -26,7 +27,9 @@ HEADERS  += \
     Schedulerdialog.h \
     TimeSlot.h \
     ColorButton.h \
-    UserProfile.h
+    UserProfile.h \
+    MeetingGroup.h \
+    CommonEnums.h
 
 FORMS    += \
     CalendarWeekWidget.ui \

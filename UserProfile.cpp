@@ -1,5 +1,7 @@
 #include "UserProfile.h"
 
-UserProfile::UserProfile()
+UserProfile::UserProfile() :
+    calendarState(new int*[24])
 {
+
 }

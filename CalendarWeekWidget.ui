@@ -343,7 +343,7 @@
        </widget>
       </item>
       <item row="0" column="0">
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="buttonAll">
         <property name="text">
          <string>v | &gt;</string>
         </property>

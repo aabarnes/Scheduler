@@ -4,6 +4,8 @@
 #include <QColor>
 #include <QPalette>
 
+#include "CommonEnums.h"
+
 TimeSlot::TimeSlot(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::TimeSlot),
@@ -31,19 +33,19 @@ void TimeSlot::allDay(int day, int avail){
     ColorButton *button;
 
     // Determine day
-    if(day == 0) {
+    if(day == Day::SUNDAY) {
         button = children.at(0);
-    } else if(day == 1) {
+    } else if(day == Day::MONDAY) {
         button = children.at(1);
-    } else if(day == 2) {
+    } else if(day == Day::TUESDAY) {
         button = children.at(2);
-    } else if(day == 3) {
+    } else if(day == Day::WEDNESDAY) {
         button = children.at(3);
-    } else if(day == 4) {
+    } else if(day == Day::THURSDAY) {
         button = children.at(4);
-    } else if(day == 5) {
+    } else if(day == Day::FRIDAY) {
         button = children.at(5);
-    } else if(day == 6) {
+    } else if(day == Day::SATURDAY) {
         button = children.at(6);
     } else {
         // invalid day

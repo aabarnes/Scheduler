@@ -16,6 +16,9 @@ public:
     explicit SchedulerDialog(QWidget *parent = 0);
     ~SchedulerDialog();
 
+public slots:
+    void requestCalendar();
+
 private:
     Ui::SchedulerDialog *ui;
     QButtonGroup *radioGroup;
