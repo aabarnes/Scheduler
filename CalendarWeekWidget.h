@@ -19,9 +19,6 @@ public:
 
     int **getWeekAvail();
 
-signals:
-    void changeColor(int day, int avail);
-
 public slots:
     void updateAvail(int curAvail);
 
@@ -34,11 +31,12 @@ private:
     QButtonGroup *timeGroup;
 
     void setTimeSlots();
-    void setUpDayGroup();
-    void setUpTimeGroup();
+    void setDayGroup();
+    void setTimeGroup();
 
 private slots:
     void handleDayClicked(int day);
+    void handleTimeClicked(int id);
 };
 
 #endif // CALENDARWEEKWIDGET_H

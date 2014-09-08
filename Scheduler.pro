@@ -17,14 +17,16 @@ SOURCES += main.cpp\
     SignInDialog.cpp \
     Schedulerdialog.cpp \
     TimeSlot.cpp \
-    ColorButton.cpp
+    ColorButton.cpp \
+    UserProfile.cpp
 
 HEADERS  += \
     CalendarWeekWidget.h \
     SignInDialog.h \
     Schedulerdialog.h \
     TimeSlot.h \
-    ColorButton.h
+    ColorButton.h \
+    UserProfile.h
 
 FORMS    += \
     CalendarWeekWidget.ui \

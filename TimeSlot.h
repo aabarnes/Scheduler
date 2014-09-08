@@ -16,8 +16,6 @@ public:
     ~TimeSlot();
 
     int *getTimeAvail();
-
-public slots:
     void allTime(int avail);
     void allDay(int day, int avail);
     

@@ -12,14 +12,11 @@ CalendarWeekWidget::CalendarWeekWidget(QWidget *parent) :
     ui->setupUi(this);
 
     setTimeSlots();
-    setUpDayGroup();
-    setUpTimeGroup();
+    setDayGroup();
+    setTimeGroup();
 
-    for(int i = 0; i < 24; ++i){
-        connect(dayGroup, SIGNAL(buttonClicked(int)), this, SLOT(handleDayClicked(int)));
-        connect( this, SIGNAL(changeColor(int,int)), timeSlots.at(i), SLOT(allDay(int, int)));
-        connect(timeGroup->button(i), SIGNAL(clicked()), timeSlots.at(i), SLOT(allTime(avail)));
-    }
+    connect(dayGroup, SIGNAL(buttonClicked(int)), this, SLOT(handleDayClicked(int)));
+    connect(timeGroup, SIGNAL(buttonClicked(int)), this, SLOT(handleTimeClicked(int)));
 }
 
 CalendarWeekWidget::~CalendarWeekWidget()
@@ -67,7 +64,7 @@ void CalendarWeekWidget::setTimeSlots(){
     timeSlots.append(ui->week11P);
 }
 
-void CalendarWeekWidget::setUpDayGroup(){
+void CalendarWeekWidget::setDayGroup(){
     dayGroup->addButton(ui->buttonSun, 0);
     dayGroup->addButton(ui->buttonMon, 1);
     dayGroup->addButton(ui->buttonTues, 2);
@@ -77,7 +74,7 @@ void CalendarWeekWidget::setUpDayGroup(){
     dayGroup->addButton(ui->buttonSat, 6);
 }
 
-void CalendarWeekWidget::setUpTimeGroup(){
+void CalendarWeekWidget::setTimeGroup(){
     timeGroup->addButton(ui->button12A, 0);
     timeGroup->addButton(ui->button1A, 1);
     timeGroup->addButton(ui->button2A, 2);
@@ -105,5 +102,11 @@ void CalendarWeekWidget::setUpTimeGroup(){
 }
 
 void CalendarWeekWidget::handleDayClicked(int day){
-    emit changeColor(day, avail);
+    for(int i = 0; i < 24; ++i){
+        timeSlots.at(i)->allDay(day, avail);
+    }
+}
+
+void CalendarWeekWidget::handleTimeClicked(int id){
+    timeSlots.at(id)->allTime(avail);
 }
